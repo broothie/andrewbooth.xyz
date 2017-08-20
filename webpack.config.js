@@ -2,7 +2,7 @@ module.exports = {
   context: __dirname,
   entry: './src/js/main.js',
   output: {
-    filename: './assets/js/bundle.js'
+    filename: './assets/bundle.js'
   },
   resolve: {
     extensions: ['.js', '*']

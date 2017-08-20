@@ -1,0 +1,43 @@
+
+html,
+body {
+  width: 100%;
+
+  font-family: Georgia;
+
+  > section {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > .section-content {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+
+      width: 48%;
+
+      &.section-content-img {
+        div {
+          width: 47.5%;
+
+          &.img {
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}

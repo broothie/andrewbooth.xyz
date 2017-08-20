@@ -1,0 +1,17 @@
+
+section#projects {
+  padding: 60px 0;
+
+  flex-flow: column;
+
+  .section-content {
+    margin: 100px 0;
+  }
+
+  .img-right {
+    h2,
+    p {
+      text-align: right;
+    }
+  }
+}
