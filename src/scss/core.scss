@@ -22,7 +22,7 @@ body {
       flex-flow: row;
       justify-content: space-between;
 
-      width: 48%;
+      max-width: 50%;
 
       &.section-content-img {
         div {
@@ -38,6 +38,18 @@ body {
             > * {
               margin: 5px 0;
             }
+          }
+        }
+      }
+
+      @media (max-width: 600px) {
+        &.section-content-img {
+          .info {
+            width: 100%;
+          }
+
+          .img {
+            display: none;
           }
         }
       }

@@ -1,8 +1,31 @@
 import projects from './projects';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const projectsSection = document.getElementById('projects');
+  // Set up scroll nudge
+  const SECONDS = 1000;
+  const WAIT_TIME = 5 * SECONDS;
+  const MOVE_HEIGHT = 30;
+  const MOVE_TIME = 2/5 * SECONDS;
+  const UPDATE_RATE = 10;
+  const COUNTER_MAX = MOVE_TIME / UPDATE_RATE;
+  setTimeout(() => {
+    if (document.body.scrollTop < MOVE_HEIGHT) {
+      let scrollCounter = 0;
+      const scrollInterval = setInterval(() => {
+        scrollCounter++;
+        document.body.scrollTop = MOVE_HEIGHT / 2 * (
+          1 - Math.cos(scrollCounter * 2 * Math.PI / COUNTER_MAX)
+        );
+      }, UPDATE_RATE);
 
+      setTimeout(() => {
+        clearInterval(scrollInterval);
+      }, MOVE_TIME);
+    }
+  }, WAIT_TIME);
+
+  // Load up projects section
+  const projectsSection = document.getElementById('projects');
   projects.forEach((project, idx) => {
     // Info div
     const title = document.createElement('h2');
@@ -52,14 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const sectionContentDiv = document.createElement('div');
     sectionContentDiv.classList.add('section-content');
     sectionContentDiv.classList.add('section-content-img');
-
-    // Add image and info
-    let divs = [imgDiv, infoDiv];
-    if (idx % 2 === 0) {
-      divs = divs.reverse();
-      sectionContentDiv.classList.add('img-right');
-    }
-    divs.forEach(div => sectionContentDiv.appendChild(div));
+    sectionContentDiv.appendChild(imgDiv);
+    sectionContentDiv.appendChild(infoDiv);
 
     // Add to page
     projectsSection.appendChild(sectionContentDiv);

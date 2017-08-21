@@ -86,7 +86,7 @@ body {
       display: flex;
       flex-flow: row;
       justify-content: space-between;
-      width: 48%; }
+      max-width: 50%; }
       html > section > .section-content.section-content-img div,
       body > section > .section-content.section-content-img div {
         width: 47.5%; }
@@ -96,6 +96,13 @@ body {
         html > section > .section-content.section-content-img div.info > *,
         body > section > .section-content.section-content-img div.info > * {
           margin: 5px 0; }
+      @media (max-width: 600px) {
+        html > section > .section-content.section-content-img .info,
+        body > section > .section-content.section-content-img .info {
+          width: 100%; }
+        html > section > .section-content.section-content-img .img,
+        body > section > .section-content.section-content-img .img {
+          display: none; } }
 
 h1 {
   font-size: 40px; }
