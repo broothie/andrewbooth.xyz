@@ -1,7 +1,7 @@
 {
   "name": "github-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Portfolio of Andrew D Booth.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boothandrewd/portfolio.git"
+    "url": "git+https://github.com/boothandrewd/boothandrewd.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrew D Booth",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/boothandrewd/portfolio/issues"
+    "url": "https://github.com/boothandrewd/boothandrewd.github.io/issues"
   },
-  "homepage": "https://github.com/boothandrewd/portfolio#readme",
+  "homepage": "https://github.com/boothandrewd/boothandrewd.github.io#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -80,30 +80,54 @@ document.addEventListener('DOMContentLoaded', function () {
   var projectsSection = document.getElementById('projects');
 
   _projects2.default.forEach(function (project, idx) {
+    // Info div
+    var title = document.createElement('h2');
+    title.innerText = project.title;
+
+    var titleA = document.createElement('a');
+    titleA.setAttribute('href', project.link);
+    titleA.setAttribute('target', '_blank');
+    titleA.appendChild(title);
+
+    var liveA = document.createElement('a');
+    liveA.innerText = 'Live';
+    liveA.setAttribute('href', project.link);
+    liveA.setAttribute('target', '_blank');
+
+    var githubA = document.createElement('a');
+    githubA.innerText = 'GitHub';
+    githubA.setAttribute('href', project.github);
+    githubA.setAttribute('target', '_blank');
+
+    var body = document.createElement('p');
+    body.appendChild(liveA);
+    body.innerHTML += '&nbsp;&bull;&nbsp;';
+    body.appendChild(githubA);
+    body.innerHTML += '<br/><br/><br/>';
+    body.innerHTML += project.body;
+
+    var infoDiv = document.createElement('div');
+    infoDiv.classList.add('info');
+    infoDiv.appendChild(titleA);
+    infoDiv.appendChild(body);
+
+    // Image div
+    var img = document.createElement('img');
+    img.setAttribute('src', project.imgPath);
+
+    var imgA = document.createElement('a');
+    imgA.setAttribute('href', project.link);
+    imgA.setAttribute('target', '_blank');
+    imgA.appendChild(img);
+
+    var imgDiv = document.createElement('div');
+    imgDiv.classList.add('img');
+    imgDiv.appendChild(imgA);
+
     // Section content div
     var sectionContentDiv = document.createElement('div');
     sectionContentDiv.classList.add('section-content');
     sectionContentDiv.classList.add('section-content-img');
-
-    // Info div
-    var infoDiv = document.createElement('div');
-    infoDiv.classList.add('info');
-
-    var title = document.createElement('h2');
-    title.innerText = project.title;
-    infoDiv.appendChild(title);
-
-    var body = document.createElement('p');
-    body.innerText = project.body;
-    infoDiv.appendChild(body);
-
-    // Image div
-    var imgDiv = document.createElement('div');
-    imgDiv.classList.add('img');
-
-    var img = document.createElement('img');
-    img.setAttribute('src', project.imgPath);
-    imgDiv.appendChild(img);
 
     // Add image and info
     var divs = [imgDiv, infoDiv];
@@ -132,14 +156,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = [{
   title: 'Slink',
-  body: 'Slack clone heavily influenced by AIM and Windows95',
-  imgPath: 'http://res.cloudinary.com/dfawecall/image/upload/t_media_lib_thumb/v1500956186/Logomakr_5NM6R1_ibdrdc.png',
-  link: 'http://www.slink.chat'
+  body: '\n      An AIM clone visually influenced by Windows 95.\n\n\n      Built on\n      <a href="http://rubyonrails.org/" target="_blank">Rails</a>,\n      <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>,\n      <a href="https://facebook.github.io/react/" target="_blank">React</a>,\n      and\n      <a href="http://redux.js.org/" target="_blank">Redux</a>.\n    ',
+  imgPath: 'assets/img/slink.gif',
+  link: 'http://www.slink.chat',
+  github: 'https://github.com/boothandrewd/slink'
 }, {
   title: 'Primordial Playground',
-  body: 'A colorful, interactive Game of Life sandbox.',
-  imgPath: '',
-  link: ''
+  body: '\n      A colorful, interactive Game of Life sandbox.\n\n\n      Built with <a href="http://vanilla-js.com/">VanillaJS</a>.\n    ',
+  imgPath: 'assets/img/primordial-playground.gif',
+  link: 'https://boothandrewd.github.io/primordial-playground/',
+  github: 'https://github.com/boothandrewd/primordial-playground'
+}, {
+  title: 'RegExTranslator.com',
+  body: '\n      A two-way translation tool for those regular expressions you forgot to\n      document.\n\n\n      Built with\n      <a href="https://nodejs.org/en/" target="_blank">Node</a>,\n      <a href="https://www.meteor.com/" target="_blank">Meteor</a>,\n      <a href="https://facebook.github.io/react/" target="_blank">React</a>,\n      and\n      <a href="http://redux.js.org/" target="_blank">Redux</a>.\n    ',
+  imgPath: 'assets/img/regex-translator.gif',
+  link: 'https://www.regextranslator.com/',
+  github: 'https://github.com/corsonknowles/RegExTranslator.com'
 }];
 
 /***/ })

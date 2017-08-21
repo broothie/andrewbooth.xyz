@@ -70,13 +70,17 @@ input[type="submit"] {
 html,
 body {
   width: 100%;
-  font-family: Georgia; }
+  font-family: Georgia;
+  color: #353535; }
   html > section,
   body > section {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
+    html > section:not(:last-child),
+    body > section:not(:last-child) {
+      border-bottom: 1px solid lightGray; }
     html > section > .section-content,
     body > section > .section-content {
       display: flex;
@@ -89,6 +93,9 @@ body {
         html > section > .section-content.section-content-img div.img img,
         body > section > .section-content.section-content-img div.img img {
           height: auto; }
+        html > section > .section-content.section-content-img div.info > *,
+        body > section > .section-content.section-content-img div.info > * {
+          margin: 5px 0; }
 
 h1 {
   font-size: 40px; }
@@ -96,17 +103,28 @@ h1 {
 h2 {
   font-size: 30px; }
 
+ul {
+  list-style: square;
+  list-style-position: inside; }
+
+p a {
+  font-style: italic; }
+
+a {
+  cursor: pointer; }
+  a:hover {
+    text-decoration: underline; }
+
 section#hero {
-  height: 100vh;
-  border-bottom: 1px solid lightGray; }
+  height: 100vh; }
 
 section#projects {
   padding: 60px 0;
   flex-flow: column; }
   section#projects .section-content {
-    margin: 100px 0; }
-  section#projects .img-right h2,
-  section#projects .img-right p {
-    text-align: right; }
+    margin: 120px 0; }
+
+section#footer p {
+  margin: 30px 0; }
 
 /*# sourceMappingURL=bundle.css.map */

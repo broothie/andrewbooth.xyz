@@ -4,6 +4,7 @@ body {
   width: 100%;
 
   font-family: Georgia;
+  color: #353535;
 
   > section {
     width: 100%;
@@ -11,6 +12,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid lightGray;
+    }
 
     > .section-content {
       display: flex;
@@ -28,6 +33,12 @@ body {
               height: auto;
             }
           }
+
+          &.info {
+            > * {
+              margin: 5px 0;
+            }
+          }
         }
       }
     }
@@ -40,4 +51,23 @@ h1 {
 
 h2 {
   font-size: 30px;
+}
+
+ul {
+  list-style: square;
+  list-style-position: inside;
+}
+
+p {
+  a {
+    font-style: italic;
+  }
+}
+
+a {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
