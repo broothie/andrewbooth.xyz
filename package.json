@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boothandrewd/boothandrewd.github.io.git"
+    "url": "git+https://github.com/andydennisonbooth/andydennisonbooth.github.io.git"
   },
   "keywords": [],
   "author": "Andrew D Booth",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/boothandrewd/boothandrewd.github.io/issues"
+    "url": "https://github.com/andydennisonbooth/andydennisonbooth.github.io/issues"
   },
-  "homepage": "https://github.com/boothandrewd/boothandrewd.github.io#readme",
+  "homepage": "https://github.com/andydennisonbooth/andydennisonbooth.github.io#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",

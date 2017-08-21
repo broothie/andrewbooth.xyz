@@ -172,13 +172,13 @@ exports.default = [{
   body: '\n      An AIM clone visually influenced by Windows 95. Built on\n      <a href="http://rubyonrails.org/" target="_blank">Rails</a>,\n      <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>,\n      <a href="https://facebook.github.io/react/" target="_blank">React</a>,\n      and\n      <a href="http://redux.js.org/" target="_blank">Redux</a>.\n    ',
   imgPath: 'assets/img/slink.gif',
   link: 'http://www.slink.chat',
-  github: 'https://github.com/boothandrewd/slink'
+  github: 'https://github.com/andydennisonbooth/slink'
 }, {
   title: 'Primordial Playground',
   body: '\n      A colorful, interactive Game of Life sandbox. Built with\n      <a href="http://vanilla-js.com/">VanillaJS</a>.\n    ',
   imgPath: 'assets/img/primordial-playground.gif',
-  link: 'https://boothandrewd.github.io/primordial-playground/',
-  github: 'https://github.com/boothandrewd/primordial-playground'
+  link: 'https://andydennisonbooth.github.io/primordial-playground/',
+  github: 'https://github.com/andydennisonbooth/primordial-playground'
 }, {
   title: 'RegexTranslator.com',
   body: '\n      A two-way translation tool for those regular expressions you forgot to\n      document. Built with\n      <a href="https://nodejs.org/en/" target="_blank">Node</a>,\n      <a href="https://www.meteor.com/" target="_blank">Meteor</a>,\n      <a href="https://facebook.github.io/react/" target="_blank">React</a>,\n      and\n      <a href="http://redux.js.org/" target="_blank">Redux</a>.\n    ',
@@ -190,7 +190,7 @@ exports.default = [{
   body: '\n      A simple online scrumboard great for small, agile scrum teams. Built with\n      <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>,\n      <a href="http://flask.pocoo.org/" target="_blank">Flask</a>,\n      <a href="https://socket.io/" target="_blank">SocketIO</a>,\n      <a href="https://redis.io/" target="_blank">Redis</a>,\n      <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a>,\n      <a href="https://jquery.com/" target="_blank">JQuery</a>,\n      and\n      <a href="http://materializecss.com/" target="_blank">Materialize</a>.\n\n    ',
   imgPath: 'assets/img/scrumtious.gif',
   link: 'http://scrumtio.us/',
-  github: 'https://github.com/boothandrewd/scrumtious/'
+  github: 'https://github.com/andydennisonbooth/scrumtious/'
 }];
 
 /***/ })

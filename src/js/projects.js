@@ -11,7 +11,7 @@ export default [
     `,
     imgPath: 'assets/img/slink.gif',
     link: 'http://www.slink.chat',
-    github: 'https://github.com/boothandrewd/slink'
+    github: 'https://github.com/andydennisonbooth/slink'
   }, {
     title: 'Primordial Playground',
     body: `
@@ -19,8 +19,8 @@ export default [
       <a href="http://vanilla-js.com/">VanillaJS</a>.
     `,
     imgPath: 'assets/img/primordial-playground.gif',
-    link: 'https://boothandrewd.github.io/primordial-playground/',
-    github: 'https://github.com/boothandrewd/primordial-playground'
+    link: 'https://andydennisonbooth.github.io/primordial-playground/',
+    github: 'https://github.com/andydennisonbooth/primordial-playground'
   }, {
     title: 'RegexTranslator.com',
     body: `
@@ -51,6 +51,6 @@ export default [
     `,
     imgPath: 'assets/img/scrumtious.gif',
     link: 'http://scrumtio.us/',
-    github: 'https://github.com/boothandrewd/scrumtious/'
+    github: 'https://github.com/andydennisonbooth/scrumtious/'
   }
 ];
