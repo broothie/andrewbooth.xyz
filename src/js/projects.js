@@ -15,8 +15,7 @@ export default [
     imgPath: 'assets/img/slink.gif',
     link: 'http://www.slink.chat',
     github: 'https://github.com/boothandrewd/slink'
-  },
-  {
+  }, {
     title: 'Primordial Playground',
     body: `
       A colorful, interactive Game of Life sandbox.
@@ -27,8 +26,7 @@ export default [
     imgPath: 'assets/img/primordial-playground.gif',
     link: 'https://boothandrewd.github.io/primordial-playground/',
     github: 'https://github.com/boothandrewd/primordial-playground'
-  },
-  {
+  }, {
     title: 'RegExTranslator.com',
     body: `
       A two-way translation tool for those regular expressions you forgot to
@@ -45,5 +43,24 @@ export default [
     imgPath: 'assets/img/regex-translator.gif',
     link: 'https://www.regextranslator.com/',
     github: 'https://github.com/corsonknowles/RegExTranslator.com'
+  }, {
+    title: 'Scrumtious',
+    body: `
+      A simple online scrumboard great for small, agile scrum teams.
+
+      Built with
+      <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>,
+      <a href="http://flask.pocoo.org/" target="_blank">Flask</a>,
+      <a href="https://socket.io/" target="_blank">SocketIO</a>,
+      <a href="https://redis.io/" target="_blank">Redis</a>,
+      <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a>,
+      <a href="https://jquery.com/" target="_blank">JQuery</a>,
+      and
+      <a href="http://materializecss.com/" target="_blank">Materialize</a>.
+
+    `,
+    imgPath: 'assets/img/scrumtious.gif',
+    link: 'http://scrumtio.us/',
+    github: 'https://github.com/boothandrewd/scrumtious/'
   }
 ];

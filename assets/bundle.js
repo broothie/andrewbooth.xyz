@@ -172,6 +172,12 @@ exports.default = [{
   imgPath: 'assets/img/regex-translator.gif',
   link: 'https://www.regextranslator.com/',
   github: 'https://github.com/corsonknowles/RegExTranslator.com'
+}, {
+  title: 'Scrumtious',
+  body: '\n      A simple online scrumboard great for small, agile scrum teams.\n\n      Built with\n      <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>,\n      <a href="http://flask.pocoo.org/" target="_blank">Flask</a>,\n      <a href="https://socket.io/" target="_blank">SocketIO</a>,\n      <a href="https://redis.io/" target="_blank">Redis</a>,\n      <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a>,\n      <a href="https://jquery.com/" target="_blank">JQuery</a>,\n      and\n      <a href="http://materializecss.com/" target="_blank">Materialize</a>.\n\n    ',
+  imgPath: 'assets/img/scrumtious.gif',
+  link: 'http://scrumtio.us/',
+  github: 'https://github.com/boothandrewd/scrumtious/'
 }];
 
 /***/ })
