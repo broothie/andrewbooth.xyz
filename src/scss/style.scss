@@ -1,0 +1,59 @@
+@import 'reset.scss';
+@import 'font.scss';
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+a {
+  font-style: italic;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+html, body {
+  width: 100%;
+  font-family: 'Vulf-Mono', Georgia, Monaco, monospace;
+  color: #353535;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  main, header {
+    max-width: 80%;
+  }
+}
+
+article {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  aside {
+    width: 50%;
+
+    img {
+      width: 375px;
+      height: auto;
+      float: right;
+    }
+  }
+
+  section {
+    width: 50%;
+    padding: 20px;
+  }
+}
