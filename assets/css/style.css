@@ -123,4 +123,11 @@ article {
     width: 50%;
     padding: 20px; }
 
+input {
+  margin-top: 5px;
+  border: 1px dashed black;
+  padding: 1px 5px; }
+  input:focus {
+    border: 1px solid black; }
+
 /*# sourceMappingURL=style.css.map */
