@@ -3,7 +3,7 @@ projects:
   - title: werds.co
     image_url: /assets/img/werds.co.gif
     live_link: https://werds.co
-    description: 'A place for words. Try it: <form action="https://werds.co" method="get"><input type="text" name="t"/><button type="submit" style="display:none;"></form>'
+    description: 'A place for words. Try it right here!: <form action="https://werds.co" method="get"><input type="text" name="t" placeholder="enter some words"/><button type="submit" style="display:none;"></form>'
 
   - title: Triangulunch
     image_url: /assets/img/triangulun.ch.gif

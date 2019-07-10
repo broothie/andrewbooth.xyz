@@ -113,16 +113,17 @@ article {
   justify-content: center;
   align-items: center;
   height: 100vh; }
-  article aside {
+  article > aside {
     width: 50%; }
-    article aside img {
+    article > aside img {
       width: 375px;
       height: auto;
       float: right;
-      box-shadow: 1px 1px 6px lightgray; }
-  article section {
+      box-shadow: 1px 1px 6px lightgray;
+      border-radius: 5px; }
+  article > section {
     width: 50%;
-    padding: 20px; }
+    padding: 50px; }
 
 input {
   margin-top: 5px;
