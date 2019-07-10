@@ -10,10 +10,10 @@ projects:
     live_link: https://triangulun.ch/
     description: Meet in the middle for lunch!
 
-#  - title: fileserver
-#    image_url: /assets/img/fileserver.gif
-#    live_link: https://github.com/broothie/fileserver
-#    description: A file server, written in Go. Helpful for developing static websites.
+  - title: fileserver
+    image_url: /assets/img/fileserver.gif
+    live_link: https://github.com/broothie/fileserver
+    description: A file server, written in Go. Helpful for developing static websites.
 
   - title: Slink
     image_url: /assets/img/slink.gif
