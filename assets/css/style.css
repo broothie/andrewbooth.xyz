@@ -118,7 +118,8 @@ article {
     article aside img {
       width: 375px;
       height: auto;
-      float: right; }
+      float: right;
+      box-shadow: 1px 1px 6px lightgray; }
   article section {
     width: 50%;
     padding: 20px; }
@@ -129,5 +130,12 @@ input {
   padding: 1px 5px; }
   input:focus {
     border: 1px solid black; }
+
+footer {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

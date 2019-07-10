@@ -49,6 +49,8 @@ article {
       width: 375px;
       height: auto;
       float: right;
+
+      box-shadow: 1px 1px 6px lightgray;
     }
   }
 
@@ -66,4 +68,12 @@ input {
   &:focus {
     border: 1px solid black;
   }
+}
+
+footer {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
