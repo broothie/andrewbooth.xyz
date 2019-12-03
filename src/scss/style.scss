@@ -10,7 +10,7 @@ h2 {
 }
 
 a {
-  font-style: italic;
+  font-weight: bold;
   cursor: pointer;
 
   &:hover {
@@ -20,7 +20,7 @@ a {
 
 html, body {
   width: 100%;
-  font-family: 'Vulf-Mono', Georgia, Monaco, monospace;
+  font-family: 'Vulf Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #353535;
 }
 
@@ -29,20 +29,20 @@ body {
   flex-direction: column;
   align-items: center;
 
-  main, header {
+  main {
     max-width: 60%;
   }
 }
 
-article {
+.project {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
 
   height: 100vh;
-  
-  > aside {
+
+  > .image {
     width: 50%;
     padding: 25px;
 
@@ -56,7 +56,7 @@ article {
     }
   }
 
-  > section {
+  > .details {
     width: 50%;
     padding: 25px;
   }

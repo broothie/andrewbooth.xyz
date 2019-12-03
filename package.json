@@ -1,0 +1,17 @@
+{
+  "name": "broothie.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/broothie/broothie.github.io.git",
+  "author": "Andrew Booth <booth@shipt.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "parcel src/index.pug",
+    "build": "parcel build src/index.pug --public-url /dist --no-source-maps && mv dist/index.html ."
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "pug": "^2.0.4",
+    "sass": "^1.23.7"
+  }
+}

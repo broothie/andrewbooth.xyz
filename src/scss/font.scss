@@ -1,25 +1,24 @@
 
-
 @font-face {
-  font-family: "Vulf-Mono";
-  src: url("/assets/fonts/Vulf_Mono-Regular_web.ttf");
+  font-family: "Vulf Sans";
+  src: url("../assets/fonts/Vulf-Sans/VulfSans-Light.otf");
 }
 
 @font-face {
-  font-family: "Vulf-Mono";
-  src: url("/assets/fonts/Vulf_Mono-Bold_web.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Vulf-Mono";
-  src: url("/assets/fonts/Vulf_Mono-Italic_web.ttf");
+  font-family: "Vulf Sans";
+  src: url("../assets/fonts/Vulf-Sans/VulfSans-Italic.otf");
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Vulf-Mono";
-  src: url("/assets/fonts/Vulf_Mono-Bold_Italic_web.ttf");
+  font-family: "Vulf Sans";
+  src: url("../assets/fonts/Vulf-Sans/VulfSans-Regular.otf");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "Vulf Sans";
+  src: url("../assets/fonts/Vulf-Sans/VulfSans-BoldItalic.otf");
   font-style: italic;
+  font-weight: bold;
 }
