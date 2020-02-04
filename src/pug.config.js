@@ -23,10 +23,10 @@ exports.locals = {
             image_url: 'assets/img/werds.co.gif'
         },
         {
-            title: 'Triangulunch',
-            description: 'Meet in the middle for lunch!',
-            live_link: 'https://triangulun.ch',
-            image_url: 'assets/img/triangulun.ch.gif'
+            title: 'smock',
+            description: 'A mock server, written in Go. Helpful for developing/debugging microservices.',
+            live_link: 'https://github.com/broothie/smock',
+            image_url: 'assets/img/smock.gif'
         },
         {
             title: 'fileserver',
@@ -46,6 +46,12 @@ exports.locals = {
             `,
             live_link: 'http://www.slink.chat',
             image_url: 'assets/img/slink.gif'
+        },
+        {
+            title: 'Triangulunch',
+            description: 'Meet in the middle for lunch!',
+            live_link: 'https://triangulun.ch',
+            image_url: 'assets/img/triangulun.ch.gif'
         },
         {
             title: 'Primordial Playground',
