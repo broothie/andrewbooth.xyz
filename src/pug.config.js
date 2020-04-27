@@ -3,7 +3,7 @@ exports.locals = {
         {
             title: 'Andrew Booth',
             description: `
-                Software Engineer at <a href="https://shipt.com">Shipt</a>.
+                Software Engineer at <a href="https://www.coinbase.com">Coinbase</a>.
                 <br/>
                 <br/>
                 <br/>

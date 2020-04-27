@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/style.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../assets/fonts/Vulf-Sans/VulfSans-Light.otf":[["VulfSans-Light.4066b365.otf","assets/fonts/Vulf-Sans/VulfSans-Light.otf"],"assets/fonts/Vulf-Sans/VulfSans-Light.otf"],"./../assets/fonts/Vulf-Sans/VulfSans-Italic.otf":[["VulfSans-Italic.678e2cc2.otf","assets/fonts/Vulf-Sans/VulfSans-Italic.otf"],"assets/fonts/Vulf-Sans/VulfSans-Italic.otf"],"./../assets/fonts/Vulf-Sans/VulfSans-Regular.otf":[["VulfSans-Regular.baba5888.otf","assets/fonts/Vulf-Sans/VulfSans-Regular.otf"],"assets/fonts/Vulf-Sans/VulfSans-Regular.otf"],"./../assets/fonts/Vulf-Sans/VulfSans-BoldItalic.otf":[["VulfSans-BoldItalic.1877f4f3.otf","assets/fonts/Vulf-Sans/VulfSans-BoldItalic.otf"],"assets/fonts/Vulf-Sans/VulfSans-BoldItalic.otf"],"_css_loader":"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../assets/fonts/Vulf-Sans/VulfSans-Light.otf":[["VulfSans-Light.4066b365.otf","assets/fonts/Vulf-Sans/VulfSans-Light.otf"],"assets/fonts/Vulf-Sans/VulfSans-Light.otf"],"./../assets/fonts/Vulf-Sans/VulfSans-Italic.otf":[["VulfSans-Italic.678e2cc2.otf","assets/fonts/Vulf-Sans/VulfSans-Italic.otf"],"assets/fonts/Vulf-Sans/VulfSans-Italic.otf"],"./../assets/fonts/Vulf-Sans/VulfSans-Regular.otf":[["VulfSans-Regular.baba5888.otf","assets/fonts/Vulf-Sans/VulfSans-Regular.otf"],"assets/fonts/Vulf-Sans/VulfSans-Regular.otf"],"./../assets/fonts/Vulf-Sans/VulfSans-BoldItalic.otf":[["VulfSans-BoldItalic.1877f4f3.otf","assets/fonts/Vulf-Sans/VulfSans-BoldItalic.otf"],"assets/fonts/Vulf-Sans/VulfSans-BoldItalic.otf"],"./../assets/fonts/Vulf-Mono/VulfMono-Light.otf":[["VulfMono-Light.cb5904fd.otf","assets/fonts/Vulf-Mono/VulfMono-Light.otf"],"assets/fonts/Vulf-Mono/VulfMono-Light.otf"],"./../assets/fonts/Vulf-Mono/VulfMono-Italic.otf":[["VulfMono-Italic.13b301d4.otf","assets/fonts/Vulf-Mono/VulfMono-Italic.otf"],"assets/fonts/Vulf-Mono/VulfMono-Italic.otf"],"./../assets/fonts/Vulf-Mono/VulfMono-Regular.otf":[["VulfMono-Regular.e0f2bd11.otf","assets/fonts/Vulf-Mono/VulfMono-Regular.otf"],"assets/fonts/Vulf-Mono/VulfMono-Regular.otf"],"./../assets/fonts/Vulf-Mono/VulfMono-BoldItalic.otf":[["VulfMono-BoldItalic.d3505855.otf","assets/fonts/Vulf-Mono/VulfMono-BoldItalic.otf"],"assets/fonts/Vulf-Mono/VulfMono-BoldItalic.otf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62565" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58764" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/style.a6dae8f7.js.map

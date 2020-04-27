@@ -22,3 +22,27 @@
   font-style: italic;
   font-weight: bold;
 }
+
+@font-face {
+  font-family: "Vulf Mono";
+  src: url("../assets/fonts/Vulf-Mono/VulfMono-Light.otf");
+}
+
+@font-face {
+  font-family: "Vulf Mono";
+  src: url("../assets/fonts/Vulf-Mono/VulfMono-Italic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Vulf Mono";
+  src: url("../assets/fonts/Vulf-Mono/VulfMono-Regular.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Vulf Mono";
+  src: url("../assets/fonts/Vulf-Mono/VulfMono-BoldItalic.otf");
+  font-style: italic;
+  font-weight: bold;
+}
