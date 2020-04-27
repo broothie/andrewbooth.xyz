@@ -137,7 +137,7 @@ var Game = /*#__PURE__*/function () {
     this.foreground = document.getElementById('foreground');
     this.stepHz = 10;
     this.cellSize = 14;
-    this.seedRatio = 0.15;
+    this.seedRatio = 0.2;
     this.colorMap = {
       dead: '#ffffff',
       reviving: '#fbfbfb',
@@ -378,7 +378,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58764" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64258" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

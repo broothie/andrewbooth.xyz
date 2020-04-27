@@ -16,7 +16,7 @@ html
       canvas#canvas.canvas
       main
         each project in projects
-          .project
+          .project(id=`${project.title}`)
             .image
               a(href=project.live_link target='_blank')
                 img(src=project.image_url)

@@ -11,7 +11,7 @@ class Game {
 
         this.stepHz = 10;
         this.cellSize = 14;
-        this.seedRatio = 0.15;
+        this.seedRatio = 0.2;
         this.colorMap = {
             dead: '#ffffff',
             reviving: '#fbfbfb',
