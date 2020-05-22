@@ -1,14 +1,29 @@
+require 'net/http'
+require 'json'
+require 'byebug'
+
+env = OpenStruct.new(JSON.parse(File.read('env.json')))
 
 publish do |message|
   invoke :clean
   invoke :build
   invoke :git, message
+  invoke :purge
 end
 
 git do |message|
   sh 'git add -A'
   sh "git commit -m '#{message}'"
   sh 'git push'
+end
+
+purge do
+  uri = URI("https://api.cloudflare.com/client/v4/zones/#{env.cloudflare_zone_identifier}/purge_cache")
+  res = Net::HTTP.post(uri, { purge_everything: true }.to_json,
+    'Authorization' => "Bearer #{env.cloudflare_api_token}",
+    'Content-Type' => 'application/json',
+  )
+  puts res.code
 end
 
 clean do
