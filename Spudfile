@@ -1,0 +1,16 @@
+
+publish do |message|
+  invoke :clean
+  invoke :build
+  invoke :git, message
+end
+
+git do |message|
+  sh 'git add -A'
+  sh "git commit -m '#{message}'"
+  sh 'git push'
+end
+
+clean do
+  sh? 'rm -rf index.html .cache dist'
+end
