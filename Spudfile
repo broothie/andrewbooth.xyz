@@ -23,7 +23,8 @@ purge do
     'Authorization' => "Bearer #{env.cloudflare_api_token}",
     'Content-Type' => 'application/json',
   )
-  puts res.code
+
+  puts "failed to purge cache: #{res.body}" unless res.code == '200'
 end
 
 clean do
