@@ -1,8 +1,5 @@
 require 'net/http'
-require 'json'
-require 'byebug'
-
-env = OpenStruct.new(JSON.parse(File.read('env.json')))
+require_relative 'env'
 
 publish do |message|
   invoke :clean
@@ -17,10 +14,19 @@ git do |message|
   sh 'git push'
 end
 
+serve do
+  sh 'parcel src/index.pug'
+end
+
+build 'src/**' => ['index.html', 'dist/**'] do
+  sh 'parcel build src/index.pug --public-url /dist'
+  sh 'mv dist/index.html .'
+end
+
 purge do
-  uri = URI("https://api.cloudflare.com/client/v4/zones/#{env.cloudflare_zone_identifier}/purge_cache")
+  uri = URI("https://api.cloudflare.com/client/v4/zones/#{CONFIG.cloudflare_zone_identifier}/purge_cache")
   res = Net::HTTP.post(uri, { purge_everything: true }.to_json,
-    'Authorization' => "Bearer #{env.cloudflare_api_token}",
+    'Authorization' => "Bearer #{CONFIG.cloudflare_api_token}",
     'Content-Type' => 'application/json',
   )
 
@@ -29,4 +35,8 @@ end
 
 clean do
   sh? 'rm -rf index.html .cache dist'
+end
+
+upgrade do
+  sh 'gem install spud'
 end
