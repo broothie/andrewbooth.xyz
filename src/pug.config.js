@@ -18,7 +18,10 @@ exports.locals = {
         },
         {
             title: 'Robosnek',
-            description: 'A heuristic-based <a href="https://play.battlesnake.com/s/snk_JHFjP9p4WT9DwyP999YcyQJ9/">Battlesnake</a>.',
+            description: `
+                Robosnek is a pink snake who <a href="https://play.battlesnake.com/">battles</a> other snakes
+                using a heuristic based AI I wrote in Go.
+            `,
             live_link: 'https://play.battlesnake.com/s/snk_JHFjP9p4WT9DwyP999YcyQJ9'
         },
         {
