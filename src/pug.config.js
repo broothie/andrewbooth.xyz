@@ -17,6 +17,10 @@ exports.locals = {
             image_url: 'assets/img/sugarbush-mugshot.jpeg'
         },
         {
+            title: 'Robosnek',
+            description: 'A heuristic-based <a href="https://play.battlesnake.com/s/snk_JHFjP9p4WT9DwyP999YcyQJ9/">Battlesnake</a>.',
+        },
+        {
             title: 'werds.co',
             description: 'A place for words.',
             live_link: 'https://werds.co',

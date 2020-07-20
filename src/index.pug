@@ -16,10 +16,11 @@ html
       canvas#canvas.canvas
       main
         each project in projects
-          .project(id=`${project.title}`)
-            .image
-              a(href=project.live_link target='_blank')
-                img(src=project.image_url)
+          .project(id=project.title)
+            .graphic
+              if project.live_link
+                a(href=project.live_link target='_blank')
+                  img(src=project.image_url)
 
             .details
               a(href=project.live_link target='_blank')

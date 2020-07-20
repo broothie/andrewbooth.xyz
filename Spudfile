@@ -1,5 +1,5 @@
 require 'net/http'
-require_relative 'env'
+require_relative 'config'
 
 publish do |message|
   invoke :clean
@@ -15,11 +15,11 @@ git do |message|
 end
 
 serve do
-  sh 'parcel src/index.pug'
+  sh 'yarn exec parcel src/index.pug'
 end
 
 build 'src/**' => ['index.html', 'dist/**'] do
-  sh 'parcel build src/index.pug --public-url /dist'
+  sh 'yarn exec parcel build src/index.pug --public-url /dist'
   sh 'mv dist/index.html .'
 end
 
@@ -30,7 +30,11 @@ purge do
     'Content-Type' => 'application/json',
   )
 
-  puts "failed to purge cache: #{res.body}" unless res.code == '200'
+  if res.code == '200'
+    puts 'purged cache'
+  else
+    puts "failed to purge cache: #{res.body}"
+  end
 end
 
 clean do
