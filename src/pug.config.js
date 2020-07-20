@@ -19,6 +19,7 @@ exports.locals = {
         {
             title: 'Robosnek',
             description: 'A heuristic-based <a href="https://play.battlesnake.com/s/snk_JHFjP9p4WT9DwyP999YcyQJ9/">Battlesnake</a>.',
+            live_link: 'https://play.battlesnake.com/s/snk_JHFjP9p4WT9DwyP999YcyQJ9'
         },
         {
             title: 'werds.co',
