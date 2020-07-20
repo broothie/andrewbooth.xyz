@@ -19,8 +19,12 @@ serve do
 end
 
 build 'src/**' => ['index.html', 'dist/**'] do
-  sh 'yarn exec parcel build src/index.pug --public-url /dist'
-  sh 'mv dist/index.html .'
+  sh 'yarn exec parcel build src/index.pug --public-url dist'
+  File.write('index.html', File.read('dist/index.html').gsub('="/', '="/dist/'))
+  Dir.glob('dist/*.css').each do |css|
+    File.write(css, File.read(css).gsub('url(/', 'url(/dist/'))
+  end
+  #sh 'mv dist/index.html .'
 end
 
 purge do
