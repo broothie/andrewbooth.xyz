@@ -10,7 +10,7 @@ const setUpRobosnek = () => {
     const projectDiv = document.getElementById('Robosnek');
     const removeProject = () => projectDiv.remove();
 
-    fetch('http://localhost:8080/games/last')
+    fetch('https://robosnek-ggxux3t2xa-uw.a.run.app/games/last')
         .then(response => response.json())
         .then(json => {
             const url = json.iframe_url;
