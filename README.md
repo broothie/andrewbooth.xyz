@@ -1,6 +1,6 @@
 ![Andrew at Sugarbush Resort](assets/sugarbush-mugshot.jpeg)
 
-# Andrew Booth
+# Hi! 👋 I'm Andrew
 
 Software Engineer at [Coinbase](https://www.coinbase.com). Father of Juneau the husky.
 
@@ -64,6 +64,6 @@ Written in Go.
 
 Written in Rust.
 
-#
+<hr>
 
-© 2022 Andrew Booth
+*© 2022 Andrew Booth*
