@@ -1,4 +1,5 @@
-![Andrew at Sugarbush Resort](assets/sugarbush-mugshot.jpeg)
+
+<img src="/assets/sugarbush-mugshot.jpeg" style="max-width: 20em; border-radius: 1em">
 
 # Hi! 👋 I'm Andrew
 
