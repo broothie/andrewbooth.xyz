@@ -1,3 +1,5 @@
+[← back](/blog)
+
 # Hosting a README blog
 
 Hey!
