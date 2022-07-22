@@ -1,13 +1,17 @@
-
 <img src="/assets/sugarbush-mugshot.jpeg" style="max-width: 20em; border-radius: 1em">
 
 # Hi! 👋 I'm Andrew
 
-Software Engineer at [Coinbase](https://www.coinbase.com). Father of Juneau the husky.
-
 **[GitHub](https://github.com/broothie)**
+•
 **[LinkedIn](https://www.linkedin.com/in/broothie)**
-**[Resume](assets/AndrewBooth_resume.pdf)**
+•
+**[Resume](/assets/AndrewBooth_resume.pdf)**
+•
+**[Blog](/blog)**
+
+Software Engineer at [Coinbase](https://www.coinbase.com).
+Father of Juneau the husky.
 
 ## [Whenster](https://whenster.co)
 
