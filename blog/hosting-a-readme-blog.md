@@ -12,7 +12,7 @@ I'm guessing a `README.md` would work just as well.
 So, after enabling GitHub Pages, GitHub must have some way of detecting whether it needs to run some actions?
 It must, because some Actions were set up and running on each push:
 
-[![GitHub Actions](assets/github.com_broothie_blog_actions_runs_2715808229.png)](https://github.com/broothie/blog/actions/runs/2715818051)
+[![GitHub Actions](/assets/github.com_broothie_blog_actions_runs_2715808229.png)](https://github.com/broothie/blog/actions/runs/2715818051)
 
 My guess is it looks for an `index.html` or something?
 And if conditions are right, it seems to drop into Jekyll to generate the website assets.
