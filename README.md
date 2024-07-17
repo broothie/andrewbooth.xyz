@@ -1,21 +1,18 @@
 <img src="/assets/sugarbush-mugshot.jpeg" style="max-width: 20em; border-radius: 1em">
 
-# Hi! 👋 I'm Andrew
+# Hey 👋 I'm Andrew
 
 **[GitHub](https://github.com/broothie)**
 •
 **[LinkedIn](https://www.linkedin.com/in/broothie)**
 •
 **[Resume](/assets/AndrewBooth_resume.pdf)**
-•
-**[Blog](/blog)**
 
 Software Engineer at [Coinbase](https://www.coinbase.com).
-Father of Juneau the husky.
 
 ## [Whenster](https://whenster.co)
 
-A place for events!
+A place for events.
 
 ## [Slink](https://slink.chat)
 
@@ -33,13 +30,16 @@ Attempt to generate [a commit](https://github.com/broothie/quine-commit/commit/d
 
 A task runner for any language.
 
-## [`v`](https://github.com/broothie/v)
+[//]: # (## [`v`]&#40;https://github.com/broothie/v&#41;)
 
-A Go DSL for rendering HTML (with an HTMX utility attached).
+[//]: # ()
+[//]: # (A Go DSL for rendering HTML &#40;with an HTMX utility attached&#41;.)
 
-## [`gh`](https://github.com/broothie/gh)
+[//]: # ()
+[//]: # (## [`gh`]&#40;https://github.com/broothie/gh&#41;)
 
-A Go DSL for rendering reactive HTML via WASM.
+[//]: # ()
+[//]: # (A Go DSL for rendering reactive HTML via WASM.)
 
 ## [`premark`](https://github.com/broothie/premark)
 
@@ -71,4 +71,4 @@ Written in Rust.
 
 <hr>
 
-*© 2022 Andrew Booth*
+*© 2024 Andrew Booth*
