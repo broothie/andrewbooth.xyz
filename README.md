@@ -5,8 +5,6 @@
 **[GitHub](https://github.com/broothie)**
 •
 **[LinkedIn](https://www.linkedin.com/in/broothie)**
-•
-**[Resume](/assets/AndrewBooth_resume.pdf)**
 
 Software Engineer at [Coinbase](https://www.coinbase.com).
 
